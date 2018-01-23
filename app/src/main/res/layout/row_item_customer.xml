@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imgCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_call"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="1dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/imgCall"
+        android:background="@android:color/black"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:minEms="4"
+        android:text="@string/row_item_customer_name"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_toRightOf="@id/name"
+        android:layout_toLeftOf="@id/viewDivider"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/row_item_customer_address"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:minEms="4"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addr"
+        android:layout_toRightOf="@+id/addr"
+        android:layout_toLeftOf="@id/viewDivider"
+        android:text="address"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_small" />
+
+
+
+</RelativeLayout>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/imgCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_call"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/row_item_customer_name"
+        android:textStyle="bold"
+        android:minEms="4"
+        android:textSize="@dimen/text_size_small"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_toRightOf="@id/name"
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@id/imgCall"
+        android:textSize="@dimen/text_size_small"/>
+
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/row_item_customer_address"
+        android:layout_below="@id/txtName"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:minEms="4"
+        android:textSize="@dimen/text_size_small"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:layout_toRightOf="@id/addr"
+        android:layout_alignLeft="@id/txtName"
+        android:layout_alignTop="@id/addr"
+        android:layout_toLeftOf="@id/imgCall"
+        android:textSize="@dimen/text_size_small"/>
+
+
+
+</RelativeLayout>
+-->

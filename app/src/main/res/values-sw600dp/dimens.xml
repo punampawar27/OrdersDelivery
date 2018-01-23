@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="text_size_hint">16dp</dimen>
+    <dimen name="text_size_medium">24dp</dimen>
+    <dimen name="text_size_large">28dp</dimen>
+    <dimen name="fab_margin">32dp</dimen>
+    <dimen name="fab_size">72dp</dimen>
+    <dimen name="text_padding">16dp</dimen>
+    <dimen name="separator_spacing">32dp</dimen>
+
+    <dimen name="stamp">144dp</dimen>
+
+    <dimen name="logo">200dp</dimen>
+    <!-- order items-->
+    <dimen name="list_item_space">5dp</dimen>
+    <dimen name="extra_item_margin_top">5dp</dimen>
+
+    <!-- Dialog number scrollet-->
+    <dimen name="dialog_number_scroller_padding_top">20dp</dimen>
+    <dimen name="dialog_number_scroller_padding_bottom">20dp</dimen>
+</resources>

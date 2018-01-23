@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+//8E:97:A2:38:27:C4:36:63:D9:C0:B9:8A:C5:A7:F4:02:AC:EF:61:E5
+android {
+    signingConfigs {
+    }
+    compileSdkVersion 26
+    flavorDimensions "default"
+    defaultConfig {
+        applicationId "com.tech20.mobiledelivery"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.0.3"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    buildTypes {
+        release {
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+
+    implementation 'android.arch.persistence.room:runtime:1.0.0'
+    annotationProcessor 'android.arch.persistence.room:compiler:1.0.0'
+    compile 'com.google.firebase:firebase-messaging:11.6.2'
+    compile 'com.ebanx:swipe-button:0.7.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'com.google.android.gms:play-services-location:11.6.2'
+
+    testCompile 'junit:junit:4.12'
+    // Required for instrumented tests
+    androidTestCompile 'com.android.support:support-annotations:24.0.0'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+}
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/detail_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:layout_collapseMode="pin">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--<include
+        android:id="@+id/header"
+        layout="@layout/header_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:padding="@dimen/text_padding"></include>-->
+
+<!--    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="@string/done"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/colorWhite" />-->
+
+    <CheckBox
+        android:id="@+id/chkIsVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/text_padding"
+        android:clickable="false"
+        android:text="@string/id_verified"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="@dimen/text_size_medium" />
+
+    <RelativeLayout
+        android:id="@+id/relTotal"
+        android:layout_above="@id/chkIsVerified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txtDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="discount"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_small"
+            android:background="@drawable/plain_bg"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/text_padding"
+            android:background="@drawable/plain_bg"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="@string/total"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_medium" />
+
+        <TextView
+            android:id="@+id/txtValueTotal"
+            android:layout_toRightOf="@id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/text_padding"
+            android:background="@drawable/plain_bg"
+            android:gravity="center"
+            android:padding="@dimen/text_padding"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_medium" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatRightTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/right_tick"
+        app:backgroundTint="@android:color/holo_green_dark"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatShopMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/floatRightTick"
+        android:layout_alignLeft="@id/floatRightTick"
+        android:src="@drawable/ic_add_shopping"
+        android:layout_marginBottom="30dp"
+        app:backgroundTint="@android:color/holo_green_dark"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recOrderItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_above="@id/relTotal"
+        android:layout_margin="5dp"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

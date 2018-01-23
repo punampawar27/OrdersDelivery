@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.tech420.mobile_delivery.views.activities.MainActivity">
+    <item
+        android:id="@+id/action_notes"
+        android:background="@drawable/ic_menu_note"
+        android:icon="@drawable/ic_menu_note"
+        android:title="@string/note"
+        app:showAsAction="always"/>
+</menu>

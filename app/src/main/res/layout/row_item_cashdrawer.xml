@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relParent"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/txtValueTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000.15"
+        android:textSize="@dimen/text_size_small"
+        android:minEms="3"
+        android:textColor="@android:color/black"
+        android:layout_alignParentRight="true"
+        android:gravity="left"/>
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/txtValueTotal"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@android:color/black"/>
+
+
+
+   <!-- <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtValueTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10000.15"
+        android:textSize="@dimen/text_size_small"
+        android:layout_alignRight="@id/txtTotal"
+        android:ems="4"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/txtTotal"
+        android:gravity="right"/>-->
+    <TextView
+        android:id="@+id/txtOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/row_item_cashdrawer_text_order_id"
+        android:textStyle="bold"
+        android:minEms="6"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtValueOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6654"
+        android:layout_toRightOf="@id/txtOrderId"
+        android:layout_toLeftOf="@id/txtTotal"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/row_item_cashdrawer_text_delivery_date"
+        android:textStyle="bold"
+        android:minEms="6"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtOrderId"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/txtValueDeliveryDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00/00/00"
+        android:layout_below="@id/txtValueOrderId"
+        android:layout_alignLeft="@id/txtValueOrderId"
+        android:layout_alignTop="@id/txtDeliveryDate"
+        android:layout_toLeftOf="@id/txtTotal"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@android:color/black"/>
+
+
+
+</RelativeLayout>

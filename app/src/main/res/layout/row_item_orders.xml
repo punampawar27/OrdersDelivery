@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relParent"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_arrow_next" />
+
+    <ImageView
+        android:id="@+id/imgCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_call"
+        android:layout_toLeftOf="@id/imgArrow"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/imgCall"
+        android:src="@drawable/ic_action_map"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"/>
+
+
+
+  <TextView
+      android:id="@+id/txtOrderId"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/row_item_order_orderid"
+      android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtValueOrderId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtOrderId"
+        android:layout_marginLeft="10dp"
+        android:text="@string/row_item_order_orderid"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderId"
+        android:text="@string/row_item_order_address"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtValueAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOrderId"
+        android:layout_alignLeft="@id/txtValueOrderId"
+        android:layout_toLeftOf="@id/imgMap"
+        android:layout_alignTop="@id/txtAddress"
+        android:text="@string/row_item_order_address"
+        android:layout_marginRight="5dp"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

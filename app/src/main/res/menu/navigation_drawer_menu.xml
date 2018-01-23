@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+        <item
+            android:id="@+id/nav_my_profile"
+            app:actionLayout="@layout/action_layout_nav_items"
+            android:title="@string/nav_my_profile" />
+        <item
+            android:id="@+id/nav_change_password"
+            app:actionLayout="@layout/action_layout_nav_items"
+            android:title="@string/nav_change_password"
+            />
+        <item
+            android:id="@+id/nav_faq"
+            app:actionLayout="@layout/action_layout_nav_items"
+            android:title="@string/nav_faq"
+            />
+
+        <item
+            android:id="@+id/nav_off_duty"
+            app:actionLayout="@layout/action_layout_off_duty"
+            android:title="@string/nav_off_duty" />
+
+    </group>
+
+    <item android:title="Version">
+        <menu>
+            <item
+                android:id="@+id/nav_version_name"
+                android:title="Version Name" />
+        </menu>
+    </item>
+
+
+</menu>

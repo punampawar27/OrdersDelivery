@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tech20.mobiledelivery">
+
+    <application
+        android:name=".ApplicationMobileDelivery"
+        android:allowBackup="true"
+        android:icon="@drawable/logonew"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+        >
+
+
+        <activity android:name=".activities.ActivitySplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.ActivityLogin"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityCurrentStatus"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityHome"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".activities.ActivityMyProfile"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".activities.ActivityFaq"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityOrders"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityOrderDetails"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityDeliverOrder"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityNotes"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityCustomers"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityCashDrawer"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityInventory"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".activities.ActivityExtraInventory"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".TestActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:icon="@drawable/test_icon"
+            android:screenOrientation="portrait">
+             <!--Please Remove this activity-->
+         <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+          </intent-filter>-->
+        </activity>
+
+        <service
+            android:name=".services.DeleteDataForLogoutIntentService">
+
+        </service>
+        <service
+            android:name=".services.DeleteDataForOffDutyIntentService">
+
+        </service>
+
+        <service
+            android:name=".services.MyFirebaseService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.MyFirebaseInstanceId">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.ServiceSaveLocation">
+        </service>
+
+        <service android:name=".services.FcmTokenScyncService"></service>
+
+        <receiver android:name=".location.BroadCastReceiverLocation"></receiver>
+
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+</manifest>

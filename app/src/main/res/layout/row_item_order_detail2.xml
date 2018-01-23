@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+   >
+
+<RelativeLayout
+    android:id="@+id/relParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_border_grey">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_item_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorAccent"
+        android:text="Qty"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginRight="10dp"
+        android:minEms="3"/>
+
+        <TextView
+            android:id="@+id/txtAvailedQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="@string/availed"
+            android:textSize="@dimen/text_size_small"
+            android:layout_toLeftOf="@id/tv_item_qty"
+            android:layout_marginRight="10dp"
+            android:minEms="3"/>
+
+    <TextView
+        android:id="@+id/tv_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product"
+        android:lines="2"
+        android:layout_toLeftOf="@id/txtAvailedQty"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent" />
+
+
+    <TextView
+        android:id="@+id/tv_item_package_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:text="Size"
+        android:layout_below="@id/tv_item_title"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/colorDarkGrey" />
+
+    <TextView
+        android:id="@+id/tv_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:gravity="right"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_alignTop="@id/tv_item_package_size"
+        android:layout_alignRight="@id/tv_item_qty"
+        android:textSize="@dimen/text_size_small"
+        android:text="price"
+        android:minEms="3"
+        />
+        <TextView
+            android:id="@+id/txtPricePerUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:text="@string/priceperunit"
+            android:textSize="@dimen/text_size_small"
+            android:layout_alignTop="@id/tv_item_price"
+            android:layout_alignRight="@id/txtAvailedQty"
+            android:minEms="3"/>
+
+</RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

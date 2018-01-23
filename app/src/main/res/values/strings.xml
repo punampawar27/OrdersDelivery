@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">GreenForce Delivery</string>
+    <string name="help"><u>Help</u></string>
+    <string name="alert_call_support">Difficulty Logging In ?</string>
+    <string name="alert_update_session_id">You are already logged in from other device</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_off_duty">OFF Duty</string>
+    <string name="no_orders">No Orders Available</string>
+    <string name="no_routes">No routes has been assigned yet</string>
+    <string name="err_network">Please check Network!</string>
+    <string name="inventory_status">Delivery</string>
+    <string name="no_data_found">No data found</string>
+    <string name="err_authentication">Please correct your username/password and try again!</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="a">Hello world!</string>
+    <string name="b">Hello world!</string>
+    <string name="ans">An Intent is basically a message to say you did or want something to happen. Depending on the pedingIntent, apps or the OS might be listening for it and will react accordingly.</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="no_connection">Please check your Internet Connection</string>
+    <string name="action">Action</string>
+    <string name="row_item_order_orderid">Order No.</string>
+    <string name="row_item_order_address">Address</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="row_item_customer_name">Name</string>
+    <string name="row_item_customer_address">Address</string>
+    <string name="done">DONE</string>
+    <string name="id_verified">ID Verified</string>
+    <string name="syncing_location">Syncing Location</string>
+    <string name="please_specify_reason">Please specify reason</string>
+
+    <array name="array_order_status">
+        <item>Delivered</item>
+        <item>Customer Not Available</item>
+        <item>Invalid Address</item>
+    </array>
+
+    <string name="off_duty">Go on duty to report your location and availability,as well as to see the list of currently assigned deliveries.</string>
+
+    <string name="screen_size">default</string>
+    <string name="permission_message">To use all the features of this application, it is important to allow all permissions</string>
+    <string name="closing_message">All permissions needed to be accepted to use this app.</string>
+    <string name="ok">Ok</string>
+    <string name="please_wait">please wait ...</string>
+    <string name="please_enter_username">Please Enter Username</string>
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="please_enter_storeid">Please Enter StoreId</string>
+    <string name="call_support">Click Yes to call support</string>
+    <string name="logout_other_devices">Click Yes to logout from all other devices and login to the current device</string>
+    <string name="current_status_logout_message">This will clear all login preferences. Do you want to Log out ?</string>
+    <string name="logout">Log out ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="contact_not_available">Contact not available</string>
+    <string name="not_picked_image">You haven\'t picked Image</string>
+    <string name="image_not_found">could not find profile image</string>
+    <string name="password_cannot_emtpy">password fields cannot be empty</string>
+    <string name="password_new_conf_same">New password and Confirm password is not same</string>
+    <string name="passoword_success">password updated</string>
+    <string name="total">Total : </string>
+    <string name="note">note</string>
+    <string name="discount">Discount : </string>
+    <string name="no_note_available">No note available</string>
+    <string name="currency_sign">$</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_title_gps_off">GPS is Off</string>
+    <string name="dialog_message_turn_on_gps">It is required to turn on the GPS manually for your device</string>
+
+    <!-- Errors -->
+    <string name="error_no_faq">No FAQ for you</string>
+    <string name="error_fetch_image">Something went wrong while fetching image</string>
+    <string name="error_loading_cashdrawer">No data in Cash Drawer</string>
+    <string name="error_loading_inventory">No data in Inventory</string>
+    <string name="error_no_extra_inventory">No Extra Inventory</string>
+
+
+    <!-- Titles -->
+    <string name="title_current_status">Duty Status</string>
+    <string name="title_green_force_mobile">GreenForce Mobile</string>
+    <string name="title_my_profile">My Profile</string>
+    <string name="title_faq">FAQ</string>
+    <string name="title_deliveries">Deliveries</string>
+    <string name="title_customers">Customers</string>
+    <string name="title_cash_drawer">Cash Drawer</string>
+    <string name="title_inventory">Inventory</string>
+    <string name="title_note">Note</string>
+    <string name="title_extra_inventory">Extra Inventory</string>
+
+    <!--  Navigation drawer menu   -->
+    <string name="nav_my_profile">My Profile</string>
+    <string name="nav_change_password">Change Password</string>
+    <string name="nav_faq">FAQs</string>
+    <string name="nav_off_duty">Off Duty</string>
+
+    <!-- Drawer-->
+    <string name="open_drawer">open drawer</string>
+    <string name="closed_drawer">closed drawer</string>
+
+    <!-- Progressdialog title message -->
+    <string name="prg_messgae">changing duty status</string>
+    <string name="prg_change_pass">updating password</string>
+    <string name="prg_load_cashdrawer_message">loading cash driver</string>
+
+    <!-- Dialog -->
+    <string name="dialog_offduty_title">Off duty</string>
+    <string name="dialog_offduty_message">DO you want to go Off Duty ?</string>
+    <string name="dialog_delete_extra_item">This will delete all Added extra items from order, you want to continue ?</string>
+    <string name="dialog_title_delete_extra_item">Delete Extra Items</string>
+
+    <string name="dialog_pending_orders_title">Pending Orders</string>
+    <string name="dialog_offduty_order_status_message">Please change the status of order before going off duty.</string>
+
+
+    <!-- Home options items -->
+    <string name="home_option_deliveries">Deliveries</string>
+    <string name="home_option_inventory">Inventory</string>
+    <string name="home_option_customers">Customers</string>
+    <string name="home_option_cash_drawer">Cash Drawer</string>
+
+
+    <!-- row_item_cashdrawer-->
+    <string name="row_item_cashdrawer_text_order_id">Order Id</string>
+    <string name="row_item_cashdrawer_text_delivery_date">Delivery Date</string>
+
+    <!-- radiobutton -->
+    <string name="radio_btn_deliveded">Delivered</string>
+    <string name="radio_btn_customer_not_available">Customer Not Available</string>
+    <string name="radio_btn_invalid_address">Invalid Address</string>]
+    <string name="radio_btn_other">Other</string>
+
+    <!-- row item extra inventory-->
+    <string name="available">Available</string>
+    <string name="availed">Availed</string>
+    <string name="priceperunit">Price\\unit</string>
+    <string name="package_size">Pkg Size</string>
+    <string name="price">Price</string>
+    <string name="add">Add</string>
+    <string name="change">Change</string>
+</resources>

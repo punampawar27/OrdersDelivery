@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dialog_number_scroller_padding_top"
+        android:paddingBottom="@dimen/dialog_number_scroller_padding_bottom"
+        android:paddingRight="10dp">
+<RelativeLayout
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="@dimen/dialog_number_scroller_padding_bottom"
+    android:background="@color/colorWhite"
+     >
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="3"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"/>
+
+    <SeekBar
+        android:id="@+id/seekBarNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNumber"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        />
+
+    <Button
+        android:id="@+id/btnSeekDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:layout_below="@id/seekBarNumber"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_action_icon_close"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

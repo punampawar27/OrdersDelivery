@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+
+    >
+<!--    android:background="@drawashape_border_greyners"-->
+
+    <TextView
+        android:id="@+id/txtQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q : "
+        android:textSize="@dimen/faq_Q_textsize"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_toRightOf="@+id/txtA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TO be or not to be is the question, but is it a question ?"
+        android:textSize="@dimen/faq_question_textsize"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/txtA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtQuestion"
+        android:text="Ans : "
+        android:textSize="@dimen/faq_A_textsize"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flip a coin, you will get the answer before looking at a result"
+        android:textSize="@dimen/faq_answer_textsize"
+        android:layout_alignTop="@id/txtA"
+        android:layout_alignLeft="@id/txtQuestion"
+        />
+
+</RelativeLayout>
